@@ -4,7 +4,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {margin:0;}
+body {
+  margin:0;
+  background-color: rgb(242,242,242);
+}
 
 
 .topnav {
@@ -68,6 +71,20 @@ height: 324px;
   text-decoration: none;
 }
 
+.box {
+    width:300px;
+    height:450px;
+    padding: 100px 50px;
+    background:#FFF;
+    margin:40px auto;
+    display:inline-block;
+}
+
+.effect1{
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 </style>
 </head>
@@ -86,36 +103,36 @@ height: 324px;
 
 </div>
 
-<br>
-<br>
-<br>
-
-<div style="float: left; width: 300px; padding-top: 100px; padding-left: 50px;">
+<div style="margin: auto; width: 70%;">
+<div class="box effect1">
 <span style="text-align: center; font-size: 16px; font-family: helvetica, Helvetica, Arial, sans-serif; font-weight: bold;
-">Michelle Lewis can be listened to on WMC-FM 100 Memphis weekday mornings from 6AM-10AM! <br><br>(Click the station logo below to listen live):</span>
+">Michelle Lewis can be listened to on FM100 (Memphis, TN) weekday mornings from 6AM-10AM! <br><br>(Click the station logo below to listen live):</span>
 
-<a href="javascript:tgmp.playStream();" data-tg-popup-button="" onclick="window.open('http://www.fm100memphis.com/player/popup','Listen Live','width=770,height=560'); return false;" ><img src="fm100.png" style="display: block; margin-left: auto; margin-right: auto;" />
+<a href="javascript:tgmp.playStream();" data-tg-popup-button="" onclick="window.open('http://www.fm100memphis.com/player/popup','Listen Live','width=770,height=560'); return false;" ><img src="fm100.png" style="display: block; width: 100%;" />
 </a>
-</div>
 
-<div style="float: left;">
-<img src="photos/michelle6.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
-</div>
-
-<div style="float: left; width: 300px; padding-top: 100px; padding-right: 50px;">
-  <p>Michelle Lewis - Demo Reel</p>
+  <br>
+  <br>
+  <p style="text-align: center; font-size: 16px; font-family: helvetica, Helvetica, Arial, sans-serif; font-weight: bold;">Michelle Lewis - Radio Demo Reel</p>
 <audio controls>
   <source src="michelle_lewis_demo_reel.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
-
-<p>Michelle Lewis - Commercial Reel</p>
+<br>
+<br>
+<br>
+<p style="text-align: center; font-size: 16px; font-family: helvetica, Helvetica, Arial, sans-serif; font-weight: bold;">Michelle Lewis - Commercial Reel</p>
 <audio controls>
     <source src="michelle_lewis_commercial_reel.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
+
 </div>
 
+
+<img src="photos/michelle_studio.png" style="width: 400px; margin: 10px auto;" />
+
+</div>
 
 </body>
 </html>

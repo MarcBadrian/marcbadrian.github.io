@@ -4,7 +4,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {margin:0;}
+body {
+  margin:0;
+  background-color: rgb(242,242,242);
+}
 
 .topnav {
   overflow: hidden;
@@ -33,13 +36,19 @@ body {margin:0;}
   color: white;
 }
 
-#image-container {
-background: url(./michelle_logo.png) left top no-repeat;
-box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
-width: 576px;
-height: 324px;
+.box {
+    width:70%;
+    padding: 40px;
+    height:1000px;
+    background:#FFF;
+    margin:40px auto;
 }
 
+.effect1{
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 </style>
 </head>
@@ -58,13 +67,15 @@ height: 324px;
 
 </div>
 
-<div style="margin: auto; width: 50%; padding-top: 100px;">
-<iframe src="https://player.vimeo.com/video/102894190" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div class="box effect1">
+<div style="margin: auto; position: relative; width: 70%; padding-top: 50px;">
+<iframe src="https://player.vimeo.com/video/102894190" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 </div>
 
-<div style="margin: auto; width: 50%; padding-top: 50px; padding-bottom: 100px;">
-  <p style="type-family: helvetica, sans-serif; font-size: 16px; font-weight: bold; padding-left: 20px;">Watch some of my YouTube videos below! (Click the icon at the top-left to see more.)</p>
-<iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=mimirb88&rel=0" frameborder="1" width="640" height="360"></iframe>
+<div style="margin: auto; position: relative; width: 70%; padding-top: 50px; padding-bottom: 100px;">
+  <p style="padding-left: 20px; text-align: center; font-size: 16px; font-family: helvetica, Helvetica, Arial, sans-serif; font-weight: bold;">Watch some of my YouTube videos below! <br>(Click the icon at the top-left to see more.)</p>
+<iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=mimirb88&rel=0" frameborder="0" width="640" height="360"></iframe>
+</div>
 </div>
 
 </body>

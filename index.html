@@ -4,7 +4,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {margin:0;}
+body {
+  margin: 0;
+  background-color: rgb(242,242,242);
+}
 
 .topnav {
   overflow: hidden;
@@ -40,11 +43,26 @@ width: 576px;
 height: 324px;
 }
 
+.box {
+    width:70%;
+    padding: 40px;
+    height:1700px;
+    background:#FFF;
+    margin:40px auto;
+}
+
+.effect1{
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 </style>
 </head>
 <body>
 
-<div id="fb-root"></div>
+
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -65,28 +83,29 @@ height: 324px;
   <a href="http://facebook.com/MichelleRadio" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:2px;"><img src="./social_buttons/facebook500.png" alt="" /></a>
 </div>
 
-<div style="padding-left:300px;">
-<img src="./michelle_headshot_no_bkgrd.png" alt="" style="float:left;"/>
-<div id="image-container" style="float:left;"></div>
+<div style="padding-left:300px;display:inline; margin:auto;">
+<img src="./michelle_headshot_no_bkgrd.png" alt="" />
+<img src="./michelle_logo.png" alt="" />
+
 </div>
 
+<div class="box effect1">
 <!-- start feedwind code --> 
-<div style="float:left;width:800px;padding-left:125px;">
-  <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="62684/"></script> 
+<div style="float:left; width:60%; height:1000px;">
+  <iframe src="https://feed.mikle.com/widget/v2/62684/" height="1700px" width="100%" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
 </div>
 <!-- end feedwind code -->
 
-<div class="fb-page" data-href="https://www.facebook.com/MichelleRadio" data-tabs="timeline" data-width="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/MichelleRadio" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/MichelleRadio">Michelle Lewis</a></blockquote></div>
+<div class="fb-page" data-href="https://www.facebook.com/MichelleRadio" data-tabs="timeline" data-width="200" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/MichelleRadio" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/MichelleRadio">Michelle Lewis</a></blockquote></div>
 
 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMichelleRadio&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="500" style="border:none;overflow:hidden;float:right;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
-<br>
-<br>
 
-<div style="float:right;">
+<div style="float:right; padding-top: 50px;">
 <a class="twitter-timeline" data-lang="en" data-width="300" data-height="500" href="https://twitter.com/Michelle_Radio?ref_src=twsrc%5Etfw">Tweets by Michelle_Radio</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
+</div>
 <br>
 
 </body>
