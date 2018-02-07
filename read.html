@@ -21,8 +21,8 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 
@@ -140,11 +140,11 @@ body {font-family: Verdana, sans-serif; margin:0}
   <a class="active" href="./read.html">Read</a>
   <a href="./watch.html">Watch</a>
   <a href="./listen.html">Listen</a>
-  <a href="http://linkedin.com/in/michellebuchwalter" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:2px;"><img src="./social_buttons/linkedin.png" alt="" /></a>
-  <a href="https://www.youtube.com/user/mimirb88" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:2px;"><img src="./social_buttons/youtube-variation.png" alt="" /></a>
-  <a href="http://instagram.com/michelle_radio" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:2px;"><img src="./social_buttons/instagram.png" alt="" /></a>
-  <a href="http://twitter.com/Michelle_Radio" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:2px;"><img src="./social_buttons/twitter.png" alt="" /></a>
-  <a href="http://facebook.com/MichelleRadio" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:2px;"><img src="./social_buttons/facebook500.png" alt="" /></a>
+  <a href="http://linkedin.com/in/michellebuchwalter" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:3px;"><img src="./linkedin_new.png" alt="" /></a>
+  <a href="https://www.youtube.com/user/mimirb88/videos" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:2px;"><img src="./youtube_new.png" alt="" /></a>
+  <a href="http://instagram.com/michelle_radio" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:7px;"><img src="./instagram_new.png" alt="" style="display: inline-block; height: 100%; vertical-align: middle;"/></a>
+  <a href="http://twitter.com/Michelle_Radio" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:2px;"><img src="./twitter_new.png" alt="" /></a>
+  <a href="http://facebook.com/MichelleRadio" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:2px;"><img src="./facebook_new.png" alt="" /></a>
 </div>
 
 <br>
@@ -161,7 +161,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 <br>
 
 <div style="margin: auto; width: 85%; border: padding: 20px;">
-<p>
+<p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
 Growing up as a kid, Michelle Lewis’ American idol wasn’t Kelly Clarkson or Carrie Underwood - it was Dick Clark. With broadcasting in her blood and ambition in her soul, Lewis graduated from Syracuse University with a Bachelor's Degree in Broadcast Journalism. She got her first on-air shift her junior year of college on WJPZ-FM, the student run college radio station. She also served as the radio station's Promotions Director. Lewis simultaneously worked at 107.9 WWHT in Syracuse, New York, serving as one of their weekend on-air personalities and promotions assistants. She also interned for Elvis Duran and the Morning Show in New York City on WHTZ ("Z100"). Lewis then went to 97.9 WRMF in West Palm Beach, Florida in May, 2010. She was an on air personality and served as the Morning Show Producer, Music Director, Assistant Program Director, and Social Media Strategist for the station. In November 2012, she made her move to Memphis, TN to do mornings on the legendary FM “superpower,” FM100 (WMC-FM).
 <br><br>
 Lewis' passion for music, pop culture, and the city of Memphis has radiated throughout the local airwaves since her arrival, and she remains constantl connected to the community across all social media platforms. When she isn’t in the studio, Lewis has her finger on the pulse of the city. You may catch her on the Watercooler Wednesday segments during WREG News Channel 3’s Live At 9 giving professional commentary on hot topics and current affairs or promoting the “Pup of the Month” for the Memphis Humane Society and helping dogs find forever homes. She co-hosts a yearly radiothon to raise money for the Children’s Miracle Network benefiting LeBonheur Children’s Hospital, hosts the Memphis Go Red For Women Survivor Fashion Show for the American Heart Association, and emcees the annual Susan G. Komen Race for the Cure 5K in Downtown Memphis at Autozone Park!
@@ -257,17 +257,28 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides(n), 2000); // Change image every 2 seconds
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
 
