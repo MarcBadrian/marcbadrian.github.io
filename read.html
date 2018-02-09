@@ -66,11 +66,12 @@ body {font-family: Verdana, sans-serif; margin:0}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 400px;
+  max-width: 600px;
   position: relative;
   margin: auto;
   min-height: 400px;
   max-height: 500px;
+  padding-top: 150px;
 }
 
 /* Next & previous buttons */
@@ -108,12 +109,12 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -133,6 +134,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 
 </style>
 </head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
 
 <div class="topnav">
@@ -152,22 +154,32 @@ body {font-family: Verdana, sans-serif; margin:0}
 <br>
 
 <div class="box effect1">
-<img src="photos/michelle2.jpg" style="display: block;
+
+<img src="opening_quote.png" style="display: inline-block;
+        margin-left: 0px;
+        margin-right: auto;
+        width: 40%;" />
+
+<img src="photos/michelle_about.JPG" style="float: right; display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 30px;
+    padding-left: 20px;
     width: 60%;" />
 
-<br>
-<br>
 
-<div style="margin: auto; width: 85%; border: padding: 20px;">
+<div style="margin: 0px; width: 85%;">
+<br>
 <p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-Growing up as a kid, Michelle Lewis’ American idol wasn’t Kelly Clarkson or Carrie Underwood - it was Dick Clark. With broadcasting in her blood and ambition in her soul, Lewis graduated from Syracuse University with a Bachelor's Degree in Broadcast Journalism. She got her first on-air shift her junior year of college on WJPZ-FM, the student run college radio station. She also served as the radio station's Promotions Director. Lewis simultaneously worked at 107.9 WWHT in Syracuse, New York, serving as one of their weekend on-air personalities and promotions assistants. She also interned for Elvis Duran and the Morning Show in New York City on WHTZ ("Z100"). Lewis then went to 97.9 WRMF in West Palm Beach, Florida in May, 2010. She was an on air personality and served as the Morning Show Producer, Music Director, Assistant Program Director, and Social Media Strategist for the station. In November 2012, she made her move to Memphis, TN to do mornings on the legendary FM “superpower,” FM100 (WMC-FM).
-<br><br>
+With broadcasting in her blood and ambition in her soul, Lewis graduated from Syracuse University with a Bachelor's Degree in Broadcast Journalism. She got her first on-air shift her junior year of college on WJPZ-FM, the student run college radio station. She also served as the radio station's Promotions Director. Lewis simultaneously worked at 107.9 WWHT in Syracuse, New York, serving as one of their weekend on-air personalities and promotions assistants. She also interned for Elvis Duran and the Morning Show in New York City on WHTZ ("Z100"). Lewis then went to 97.9 WRMF in West Palm Beach, Florida in May, 2010. She was an on air personality and served as the Morning Show Producer, Music Director, Assistant Program Director, and Social Media Strategist for the station. In November 2012, she made her move to Memphis, TN to do mornings on the legendary FM “superpower,” FM100 (WMC-FM).
+</p>
+<p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
 Lewis' passion for music, pop culture, and the city of Memphis has radiated throughout the local airwaves since her arrival, and she remains constantl connected to the community across all social media platforms. When she isn’t in the studio, Lewis has her finger on the pulse of the city. You may catch her on the Watercooler Wednesday segments during WREG News Channel 3’s Live At 9 giving professional commentary on hot topics and current affairs or promoting the “Pup of the Month” for the Memphis Humane Society and helping dogs find forever homes. She co-hosts a yearly radiothon to raise money for the Children’s Miracle Network benefiting LeBonheur Children’s Hospital, hosts the Memphis Go Red For Women Survivor Fashion Show for the American Heart Association, and emcees the annual Susan G. Komen Race for the Cure 5K in Downtown Memphis at Autozone Park!
-<br><br>
-Lewis has a passion not just for radio, but also for interviewing celebrities. Her radio career has sent her to several on-location assignments such as red carpets, listener lounges and backstage experiences with actors and artists. She loves talking to bands, musicians and celebrities to find out what makes them “tick!” Lewis has produced content that has been featured on E! News, Us Weekly, People and RadarOnline. 
-<br><br>
+</p>
+<p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+Lewis has a passion not just for radio, but also for interviewing celebrities. Her radio career has sent her to several on-location assignments such as red carpets, listener lounges and backstage experiences with actors and artists. She loves talking to bands, musicians and celebrities to find out what makes them “tick!” Lewis has produced content that has been featured on E! News, Us Weekly, People and RadarOnline.
+</p>
+<p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding-bottom: 60px;">
 Lewis’ motto is to live life to its fullest. She met her husband in Memphis and got married in 2017. Lewis is born and raised in Queens, NY and currently resides in Memphis, TN.
 </p>
 </div>
@@ -196,7 +208,6 @@ Lewis’ motto is to live life to its fullest. She met her husband in Memphis an
 <div class="mySlides fade"><img src="slideshow/ss16.jpg" class="slideshow-img"></div>
 <div class="mySlides fade"><img src="slideshow/ss17.jpg" class="slideshow-img"></div>
 <div class="mySlides fade"><img src="slideshow/ss18.jpg" class="slideshow-img"></div>
-<div class="mySlides fade"><img src="slideshow/ss19.jpg" class="slideshow-img"></div>
 <div class="mySlides fade"><img src="slideshow/ss20.jpg" class="slideshow-img"></div>
 <div class="mySlides fade"><img src="slideshow/ss21.jpg" class="slideshow-img"></div>
 <div class="mySlides fade"><img src="slideshow/ss22.jpg" class="slideshow-img"></div>
@@ -235,54 +246,45 @@ Lewis’ motto is to live life to its fullest. She met her husband in Memphis an
 <div class="mySlides fade"><img src="slideshow/ss55.jpg" class="slideshow-img"></div>
 <div class="mySlides fade"><img src="slideshow/ss56.jpg" class="slideshow-img"></div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 
 </div>
 <br>
 </div>
 
 <script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides(n), 2000); // Change image every 2 seconds
-}
-
-var myIndex = 0;
+var slideIndex = 0;
 carousel();
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
 
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
     for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
+      x[i].style.display = "none";
     }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
 }
 </script>
 
 </body>
 </html>
-
-
