@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Michelle Lewis - Look</title>
+<link rel="shortcut icon" type="image/x-icon" href="michelle_favicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin:0;
+  background-color: rgb(242,242,242);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#image-container {
+background: url(./michelle_logo.png) left top no-repeat;
+box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
+width: 576px;
+height: 324px;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+.mySlides {position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;}
+
+.slideshow-img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  min-height: 400px;
+  max-height: 500px;
+  padding-top: 150px;
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,240,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.box {
+    width:50%;
+    padding: 20px;
+    height:700px;
+    background:#FFF;
+    margin:auto;
+    display:table;
+}
+
+.effect1{
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@font-face {
+font-family: 'Roboto Light';
+src: url('roboto_light/Robato-Light-webfont.eot'); /* IE9 Compat Modes */
+src: url('roboto_light/Robato-Light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('roboto_light/Roboto-Light-webfont.woff') format('woff'), /* Modern Browsers */
+url('roboto_light/Robato-Light-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+url('roboto_light/Robato-Light-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */}
+
+
+</style>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="topnav">
+  <a href="./home.html">Home</a>
+  <a href="./read.html">Read</a>
+  <a href="./watch.html">Watch</a>
+  <a href="./listen.html">Listen</a>
+  <a class="active" href="./look.html">Look</a>
+  <a href="http://linkedin.com/in/michellebuchwalter" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:3px;"><img src="./linkedin_new.png" alt="" /></a>
+  <a href="https://www.youtube.com/user/mimirb88/videos" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:2px;"><img src="./youtube_new.png" alt="" /></a>
+  <a href="http://instagram.com/michelle_radio" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:7px;"><img src="./instagram_new.png" alt="" style="display: inline-block; height: 100%; vertical-align: middle;"/></a>
+  <a href="http://twitter.com/Michelle_Radio" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:2px;"><img src="./twitter_new.png" alt="" /></a>
+  <a href="http://facebook.com/MichelleRadio" class="fademe" target="_blank" style="float:right;padding-top:10px;padding-bottom:2px;"><img src="./facebook_new.png" alt="" /></a>
+</div>
+
+<br>
+
+<div class="box effect1">
+
+
+<div class="slideshow-container" style="padding-bottom: 200px;">
+
+<div class="mySlides fade"><img src="slideshow/ss1.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss2.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss3.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss4.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss5.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss6.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss7.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss8.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss9.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss10.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss11.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss12.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss13.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss14.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss15.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss16.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss17.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss18.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss20.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss21.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss22.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss23.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss24.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss25.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss26.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss27.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss28.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss29.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss30.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss31.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss32.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss33.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss34.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss35.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss36.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss37.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss38.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss39.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss40.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss41.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss42.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss43.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss44.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss45.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss46.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss47.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss48.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss49.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss50.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss51.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss52.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss53.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss54.jpg" class="slideshow-img"></div>
+<div class="mySlides fade"><img src="slideshow/ss56.jpg" class="slideshow-img"></div>
+
+
+<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+<br>
+</div>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
