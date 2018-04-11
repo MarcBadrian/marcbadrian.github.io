@@ -134,6 +134,25 @@ body {font-family: Verdana, sans-serif; margin:0}
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.quote {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: auto;
+    width: 40%;
+}
+
+.about-pic {
+    float: right; display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    width: 60%;
+}
+
+.body-text {
+    margin: 0px; 
+    width: 85%;
+}
 
 @font-face {
 font-family: 'Roboto Light';
@@ -143,6 +162,45 @@ url('roboto_light/Roboto-Light-webfont.woff') format('woff'), /* Modern Browsers
 url('roboto_light/Robato-Light-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
 url('roboto_light/Robato-Light-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */}
 
+
+@media screen and (max-width: 700px) {
+
+  .box {
+    width:90%;
+    padding: 40px;
+    height:2800px;
+    background:#FFF;
+    margin:40px auto;
+  }
+
+  .effect1{
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .quote {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .about-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+
+  .body-text {
+    margin: 0px;
+    width: 100%;
+  }
+
+}
 
 </style>
 </head>
@@ -165,20 +223,12 @@ url('roboto_light/Robato-Light-webfont.svg#svgFontName') format('svg'); /* Legac
 
 <div class="box effect1">
 
-<img src="opening_quote.png" style="display: inline-block;
-        margin-left: 0px;
-        margin-right: auto;
-        width: 40%;" />
+<img src="opening_quote.png" class="quote" />
 
-<img src="photos/michelle_about.JPG" style="float: right; display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    width: 60%;" />
+<img src="photos/michelle_about.JPG" class="about-pic" />
 
 
-<div style="margin: 0px; width: 85%;">
+<div class="body-text">
 <br>
 <p style="font-family: 'Roboto Light'; font-size: 18px;">
 With broadcasting in her blood and ambition in her soul, Lewis graduated from Syracuse University with a Bachelor's Degree in Broadcast Journalism. She got her first on-air shift her junior year of college on WJPZ-FM, the student run college radio station. She also served as the radio station's Promotions Director. Lewis simultaneously worked at 107.9 WWHT in Syracuse, New York, serving as one of their weekend on-air personalities and promotions assistants. She also interned for Elvis Duran and the Morning Show in New York City on WHTZ ("Z100"). Lewis then went to 97.9 WRMF in West Palm Beach, Florida in May, 2010. She was an on air personality and served as the Morning Show Producer, Music Director, Assistant Program Director, and Social Media Strategist for the station. In November 2012, she made her move to Memphis, TN to do mornings on the legendary FM “superpower,” FM100 (WMC-FM).

@@ -33,6 +33,36 @@ body, html {
   vertical-align: middle;
 }
 
+.title {
+    font-family: 'League Gothic Regular'; 
+    font-size: 100px; 
+    font-weight: bold;
+    color: white;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.subtitle {
+    font-family: 'League Gothic Italic'; font-size: 40px;
+    color: white;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 65%;
+    width: 100%;
+}
+
+.look-button {
+    width: 25%; 
+    margin-left: 38%; 
+    margin-right: auto; 
+    position: absolute; 
+    top: 60%;
+}
+
 /* Main Button CSS
 ------------------------------------------*/
 
@@ -56,13 +86,81 @@ body, html {
   border: 2px solid #fff;
 }
 
+.social-buttons {
+  width: 25%; 
+  margin-left: 38%; 
+  margin-right: auto; 
+  position: absolute; 
+  top: 90%;
+}
+
 @media screen and (max-width: 420px) { /* iPhone Landscape */
+
+  .bg {
+    /* The image used */
+    background-image: url("./photos/michelle_jumps.JPG");
+
+    /* Full height */
+    height: 100%;
+    opacity: 0.8;
+
+    /* Center and scale the image nicely */
+    background-position: 53%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .look-button {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+  }
+
+  .btn-align { position: relative; padding: 20px; top: 65%;}
   .btn-ghost {
     width: 290px; width: 29.0rem;
     height: 50px; height: 5.0rem;
-    font-size: 16px; font-size: 1.6rem;
+    font-size: 16px; font-size: 1.0rem;
     line-height: 50px; line-height: 5.0rem;
   }
+
+  .btn-white { color: #fff; border: 2px solid #fff; }
+  .btn-white:hover, .btn-white:active, .btn-white:focus  {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #fff;
+  }
+
+  .title {
+    font-family: 'League Gothic Regular'; font-size: 50px; font-weight: bold;
+    color: white;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+
+  .subtitle {
+    font-family: 'League Gothic Italic'; font-size: 30px; font-weight: normal;
+    color: white;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 58%;
+    width: 100%;
+  }
+
+  .social-buttons {
+  width: 65%;
+  margin-left: 17%;
+  margin-right: auto;
+  position: absolute;
+  top: 85%;
+  }
+
 }
 
 @font-face {
@@ -81,6 +179,7 @@ url('webfonts/leaguegothic-italic-webfont.woff') format('woff'), /* Modern Brows
 url('webfonts/leaguegothic-italic-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
 url('webfonts/leaguegothic-italic-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */}
 
+
 </style>
 </head>
 <body>
@@ -88,34 +187,22 @@ url('webfonts/leaguegothic-italic-webfont.svg#svgFontName') format('svg'); /* Le
 <div class="bg">
 
 <div class="name">
-<h1 style="font-family: 'League Gothic Regular'; font-size: 100px; font-weight: bold;
-    color: white;
-    margin: auto;
-    margin-top: -100px;
-    position: absolute;
-    top: 50%;
-    width: 100%;">Michelle Lewis</h1>
+<h1 class="title">Michelle Lewis</h1>
 </div>
 
 <div class="name">
-<h1 style="font-family: 'League Gothic Italic'; font-size: 40px;
-    color: white;
-    margin: auto;
-    margin-top: -100px;
-    position: absolute;
-    top: 65%;
-    width: 100%;">on-air personality</h1>
+<h1 class="subtitle">on-air personality</h1>
 </div>
 
 
 <!-- White Button -->
-<div align="center" style="width: 25%; margin-left: 38%; margin-right: auto; position: absolute; top: 60%;">
+<div align="center" class="look-button">
     <a class="btn-ghost btn-white btn-align" href="./home.html">
       TAKE A LOOK
     </a>
 </div>
 
-<div align="center" style="width: 25%; margin-left: 38%; margin-right: auto; position: absolute; top: 90%;">
+<div align="center" class="social-buttons">
   <a href="http://facebook.com/MichelleRadio" target="_blank" style=""><img src="landing/facebook_landing.png" alt="" style="width: 15%;"/></a>
   <a href="http://twitter.com/Michelle_Radio" target="_blank" style=""><img src="landing/twitter_landing.png" alt="" style="width: 15%;"/></a>
   <a href="http://instagram.com/michelle_radio" target="_blank" style=""><img src="landing/instagram_landing.png" alt="" style="width: 15%;"/></a>

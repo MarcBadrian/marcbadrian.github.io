@@ -59,6 +59,45 @@ height: 324px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.fm100rss{
+    float:left; width:60%; height:1000px;
+}
+
+.facebookrss{
+    border:none;overflow:hidden;float:right;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 700px) {
+
+  .box {
+    width:70%;
+    padding: 40px;
+    height:3500px;
+    background:#FFF;
+    margin:40px auto;
+  }
+
+  .effect1{
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .fw-iframe {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    line-height: 0;
+    font-size: 10px;
+  }
+
+  #fw-iframe .fw-feed-items .fw-feed-item-title {
+    font-size: 10px;
+    line-height: 0;
+  }
+}
+
 
 </style>
 </head>
@@ -71,7 +110,13 @@ height: 324px;
   js = d.createElement(s); js.id = id;
   js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+
+//  jQuery(document).ready(function () {
+//    jQuery('iframe').contents().find('#player .controls-wrapper .title h1').css({'font-size':'12px'});
+//});
+
+</script>
 
 <div class="topnav">
   <a class="active" href="#home">HOME</a>
@@ -90,14 +135,12 @@ height: 324px;
 
 <div class="box effect1">
 <!-- start feedwind code -->
-<div style="float:left; width:60%; height:1000px;">
-  <iframe src="https://feed.mikle.com/widget/v2/62684/" height="1700px" width="100%" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
-</div>
+  <iframe src="https://feed.mikle.com/widget/v2/62684/" height="1700px" width="60%" class="fw-iframe" scrolling="no" frameborder="0" style="float:left"></iframe>
 <!-- end feedwind code -->
 
 
 
-<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMichelleRadio&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="500" style="border:none;overflow:hidden;float:right;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMichelleRadio&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="500" class="facebookrss" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
 <br>
 <br>
