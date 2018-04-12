@@ -52,6 +52,28 @@ body {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.vimeo-player-div {
+    margin: auto;
+    position: absolute;
+    width: 70%;
+    padding-top: 50px;
+}
+
+.text-div {
+  margin: auto;
+  position: absolute;
+  width: 70%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  top:75%;
+}
+
+.center-text {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Roboto Bold';
+  width: 100%;
+}
 
 @font-face {
 font-family: 'Roboto Bold';
@@ -61,6 +83,59 @@ url('roboto_bold/Roboto-Bold-webfont.woff') format('woff'), /* Modern Browsers *
 url('roboto_bold/Robato-Bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
 url('roboto_bold/Robato-Bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */}
 
+@media screen and (max-width: 700px) {
+
+  .box {
+    width:70%;
+    padding: 40px;
+    height:600px;
+    background:#FFF;
+    margin:40px auto;
+  }
+
+  .effect1{
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .vimeo-player-div {
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .vimeo-player {
+    width: 100%;
+    height: 100%;
+  }
+
+  .text-div {
+    margin: auto;
+    position: absolute;
+    width: 70%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    top:60%;
+  }
+
+  .center-text {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto Bold';
+    width: 110%;
+    padding-bottom: 30px;
+  }
+
+  .yt-player {
+    width: 100%;
+    height: 100%;
+  }
+
+}
 
 </style>
 </head>
@@ -80,15 +155,15 @@ url('roboto_bold/Robato-Bold-webfont.svg#svgFontName') format('svg'); /* Legacy 
 </div>
 
 <div class="box effect1">
-<div align="center" style="margin: auto; position: absolute; width: 70%; padding-top: 50px;">
-<iframe src="https://player.vimeo.com/video/102894190" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<div align="center" class="vimeo-player-div">
+<iframe src="https://player.vimeo.com/video/102894190" width="640" height="360" frameborder="0" class="vimeo-player" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 </div>
 
 
-<div align="center" style="margin: auto; position: absolute; width: 70%; padding-top: 50px; padding-bottom: 100px; top:75%;">
-  <p style="text-align: center; font-size: 20px; font-family: 'Roboto Bold'; width: 100%;">
+<div align="center" class="text-div">
+  <p class="center-text">
     Check out what I've been up to by watching my YouTube videos below! <br>(Click the icon at the top-left to see more.)</p>
-<iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=mimirb88&rel=0" frameborder="0" width="640" height="360"></iframe>
+<iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=mimirb88&rel=0" frameborder="0" width="640" height="360" class="yt-player"></iframe>
 </div>
 </div>
 
