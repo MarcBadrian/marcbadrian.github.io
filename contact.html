@@ -152,6 +152,17 @@
       position: relative;
     }
 
+    .contact_container {
+      float:right;
+      width:50%;
+    }
+
+    .contact_pic {
+      width:100%;
+      height:auto;
+      margin-left:20px;
+    }
+
     #contact input[type="text"],
     #contact input[type="email"],
     #contact textarea,
@@ -266,7 +277,7 @@
 
       .pages a {
         display: inline-block;
-        width: 20%;
+        width: 16%;
         color: #f2f2f2;
         text-align: center;
         padding: 12px 0px;
@@ -275,6 +286,12 @@
         font-size: 15px;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: bold;
+      }
+
+      .pages a.active {
+        background-color: #4CAF50;
+        color: white;
+        width: 20%;
       }
 
       .socials a {
@@ -294,8 +311,8 @@
         width: 70%;
         padding-top: 20px;
         padding-bottom: 40px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
         height: 1000px;
         background: #FFF;
         margin: 22px auto;
@@ -305,6 +322,23 @@
         -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .container {
+        width: 100%;
+        float: none;
+        padding-right: 0px;
+      }
+
+      .contact_container {
+        float:none;
+        width:100%;
+      }
+
+      .contact_pic {
+        width:100%;
+        height:auto;
+        margin-left:0px;
       }
 
     }
@@ -335,11 +369,6 @@
 
   <div class="box effect1">
 
-    <div style="float:right;width:50%;">
-      <img src="slideshow/studio_2.jpg" style="width:100%;height:auto;margin-left:20px;" />
-    </div>
-
-
   <div class="container">
     <form id="contact" action="https://formspree.io/michelle.buchwalter@gmail.com" method="POST">
       <h3>Contact Me!</h3>
@@ -359,6 +388,11 @@
       <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
     </form>
   </div>
+
+  <div class="contact_container">
+    <img src="slideshow/studio_2.jpg" class="contact_pic"/>
+  </div>
+
 
 </div>
 
