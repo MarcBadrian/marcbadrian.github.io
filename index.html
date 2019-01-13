@@ -13,10 +13,6 @@ body, html {
     margin: 0;
 }
 
-/*testing*/
-/*testing*/
-
-
 .bg {
     /* The image used */
     background-image: url("./photos/michelle_jumps.JPG");
@@ -31,32 +27,6 @@ body, html {
     background-size: cover;
 }
 
-.center{
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%);
-  color: white;
-  text-align: center;
-}
-
-.center2{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%);
-  color: white;
-  text-align: center;
-}
-.center3{
-  position: absolute;
-  left: 50%;
-  top: 60%;
-  transform: translate(-50%);
-  color: white;
-  text-align: center;
-}
-
 .name {
   text-align: center;
   display: table-cell;
@@ -65,35 +35,24 @@ body, html {
 
 .title {
     font-family: 'League Gothic Regular';
-    font-size: 10vw;
+    font-size: 100px;
     font-weight: bold;
     color: white;
-    /*margin: auto;
-    margin-top: -100px;*/
+    margin: auto;
+    margin-top: -100px;
     position: absolute;
-    top: 30%;
-    left: 50%;
+    top: 50%;
     width: 100%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
 }
 
 .subtitle {
-    font-family: 'League Gothic Italic'; font-size: 4vw;
+    font-family: 'League Gothic Italic'; font-size: 40px;
     color: white;
-    /*margin: auto;
+    margin: auto;
     margin-top: -100px;
-    /*margin: 0 auto;*/
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 65%;
     width: 100%;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
 }
 
 .look-button {
@@ -227,10 +186,18 @@ url('webfonts/leaguegothic-italic-webfont.svg#svgFontName') format('svg'); /* Le
 
 <div class="bg">
 
-<h1 class="title">Michelle Lewis</h1>
-<h1 class="subtitle">on-air personality</h1>
-<h1 class="center3">Take A Look</h1>
+<div class="name">
+  <h1 class="title">Michelle Lewis</h1>
+</div>
+<div class="name">
+  <h1 class="subtitle">on-air personality</h1>
+</div>
 
+<!-- White Button -->
+<div align="center" class="look-button">
+    <a class="btn-ghost btn-white btn-align" href="./home.html">
+      TAKE A LOOK
+    </a>
 
 
 </div>
