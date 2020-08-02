@@ -19,6 +19,7 @@ body, html {
 
     /* Full height */
     height: 100%;
+    width:100%;
     opacity: 0.8;
 
     /* Center and scale the image nicely */
@@ -49,22 +50,40 @@ body, html {
     font-family: 'League Gothic Italic'; font-size: 40px;
     color: white;
     margin: auto;
-    margin-top: -100px;
     position: absolute;
-    top: 65%;
+    top: 50%;
     width: 100%;
 }
 
 .look-button {
     width: 25%;
-    margin-left: 38%;
-    margin-right: auto;
+    margin: 0 auto;
     position: absolute;
     top: 60%;
 }
 
+.look-container {
+  top: 60%;
+  position: relative;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+}
+
 /* Main Button CSS
 ------------------------------------------*/
+
+.take-a-look {
+  color: #fff;
+  border: 2px solid #fff;
+  font: 700 20px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .16s ease;
+  padding: 15px;
+}
 
 .btn-align { position: relative; padding: 20px; top: 65%;}
 .btn-ghost {
@@ -92,6 +111,41 @@ body, html {
   margin-right: auto;
   position: absolute;
   top: 90%;
+}
+
+@media (min-width: 2100px) {
+
+  .title {
+      font-family: 'League Gothic Regular';
+      font-size: 170px;
+      font-weight: bold;
+      color: white;
+      margin: auto;
+      margin-top: -100px;
+      position: absolute;
+      top: 45%;
+      width: 100%;
+  }
+
+  .subtitle {
+      font-family: 'League Gothic Italic'; font-size: 75px;
+      color: white;
+      margin: auto;
+      position: absolute;
+      top: 51%;
+      width: 100%;
+  }
+
+  .take-a-look {
+    color: #fff;
+    border: 2px solid #fff;
+    font: 700 37px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .16s ease;
+    padding: 20px;
+  }
+
 }
 
 @media screen and (max-width: 420px) { /* iPhone Landscape */
@@ -147,9 +201,8 @@ body, html {
     font-family: 'League Gothic Italic'; font-size: 30px; font-weight: normal;
     color: white;
     margin: auto;
-    margin-top: -100px;
     position: absolute;
-    top: 58%;
+    top: 41%;
     width: 100%;
   }
 
@@ -194,12 +247,12 @@ url('webfonts/leaguegothic-italic-webfont.svg#svgFontName') format('svg'); /* Le
 </div>
 
 <!-- White Button -->
-<div align="center" class="look-button">
-    <a class="btn-ghost btn-white btn-align" href="./home.html">
+<div class="look-container">
+  <div class="link-container">
+    <a class="take-a-look" href="./home.html">
       TAKE A LOOK
     </a>
-
-
+  </div>
 </div>
 
 <div align="center" class="social-buttons">
