@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Michelle Lewis - Radio</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="./webfonts/stylesheet.css"
+      type="text/css"
+      charset="utf-8"
+    />
+    <style>
+      html {
+        background: url("./photos/michelle_jumps.JPG") no-repeat center center
+          fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      #social-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      #social-container > div {
+      }
+
+      #social-container > div > a > img {
+        max-width: 50%;
+      }
+
+      .name {
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .title {
+        font-family: "League Gothic Regular";
+        font-size: 100px;
+        font-weight: bold;
+        color: white;
+        margin: auto;
+        margin-top: -100px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+      }
+
+      .subtitle {
+        font-family: "League Gothic Italic";
+        font-size: 40px;
+        color: white;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+      }
+
+      .look-button {
+        width: 25%;
+        margin: 0 auto;
+        position: absolute;
+        top: 60%;
+      }
+
+      .look-container {
+        top: 60%;
+        position: relative;
+      }
+
+      .link-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Main Button CSS
+------------------------------------------*/
+
+      .take-a-look {
+        color: #fff;
+        border: 2px solid #fff;
+        font: 700 20px "Open Sans", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.16s ease;
+        padding: 15px;
+      }
+
+      .btn-align {
+        position: relative;
+        padding: 20px;
+        top: 65%;
+      }
+      .btn-ghost {
+        width: 140px;
+        width: 14rem;
+        height: 46px;
+        height: 4.6rem;
+        font: 700 20px/66px "Open Sans", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+        font: 2rem/6.6rem;
+        letter-spacing: 0.01rem;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.16s ease;
+        margin: 0 auto;
+      }
+
+      .btn-white {
+        color: #fff;
+        border: 2px solid #fff;
+      }
+      .btn-white:hover,
+      .btn-white:active,
+      .btn-white:focus {
+        color: #000;
+        background-color: #fff;
+        border: 2px solid #fff;
+      }
+
+      .social-buttons {
+        width: 25%;
+        margin-left: 38%;
+        margin-right: auto;
+        position: absolute;
+        top: 90%;
+      }
+
+      @media (min-width: 2100px) {
+        .title {
+          font-family: "League Gothic Regular";
+          font-size: 170px;
+          font-weight: bold;
+          color: white;
+          margin: auto;
+          margin-top: -100px;
+          position: absolute;
+          top: 45%;
+          width: 100%;
+        }
+
+        .subtitle {
+          font-family: "League Gothic Italic";
+          font-size: 75px;
+          color: white;
+          margin: auto;
+          position: absolute;
+          top: 51%;
+          width: 100%;
+        }
+
+        .take-a-look {
+          color: #fff;
+          border: 2px solid #fff;
+          font: 700 37px "Open Sans", "Helvetica Neue", Helvetica, Arial,
+            sans-serif;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: all 0.16s ease;
+          padding: 20px;
+        }
+      }
+
+      @media screen and (max-width: 420px) {
+        /* iPhone Landscape */
+
+        .bg {
+          /* The image used */
+          background-image: url("./photos/michelle_jumps.JPG");
+
+          /* Full height */
+          height: 100%;
+          opacity: 0.8;
+
+          /* Center and scale the image nicely */
+          background-position: 53%;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .look-button {
+          width: 40%;
+          margin-left: 30%;
+          margin-right: auto;
+          position: absolute;
+          top: 50%;
+        }
+
+        .btn-align {
+          position: relative;
+          padding: 20px;
+          top: 65%;
+        }
+        .btn-ghost {
+          width: 290px;
+          width: 29rem;
+          height: 50px;
+          height: 5rem;
+          font-size: 16px;
+          font-size: 1rem;
+          line-height: 50px;
+          line-height: 5rem;
+        }
+
+        .btn-white {
+          color: #fff;
+          border: 2px solid #fff;
+        }
+        .btn-white:hover,
+        .btn-white:active,
+        .btn-white:focus {
+          color: #000;
+          background-color: #fff;
+          border: 2px solid #fff;
+        }
+
+        .title {
+          font-family: "League Gothic Regular";
+          font-size: 50px;
+          font-weight: bold;
+          color: white;
+          margin: auto;
+          margin-top: -100px;
+          position: absolute;
+          top: 50%;
+          width: 100%;
+        }
+
+        .subtitle {
+          font-family: "League Gothic Italic";
+          font-size: 30px;
+          font-weight: normal;
+          color: white;
+          margin: auto;
+          position: absolute;
+          top: 41%;
+          width: 100%;
+        }
+
+        .social-buttons {
+          width: 65%;
+          margin-left: 17%;
+          margin-right: auto;
+          position: absolute;
+          top: 85%;
+        }
+      }
+
+      @font-face {
+        font-family: "League Gothic Regular";
+        src: url("webfonts/leaguegothic-regular-webfont.eot"); /* IE9 Compat Modes */
+        src: url("webfonts/leaguegothic-regular-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          /* IE6-IE8 */ url("webfonts/leaguegothic-regular-webfont.woff")
+            format("woff"),
+          /* Modern Browsers */ url("webfonts/leaguegothic-regular-webfont.ttf")
+            format("truetype"),
+          /* Safari, Android, iOS */
+            url("webfonts/leaguegothic-regular-webfont.svg#svgFontName")
+            format("svg"); /* Legacy iOS */
+      }
+
+      @font-face {
+        font-family: "League Gothic Italic";
+        src: url("webfonts/leaguegothic-italic-webfont.eot"); /* IE9 Compat Modes */
+        src: url("webfonts/leaguegothic-italic-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          /* IE6-IE8 */ url("webfonts/leaguegothic-italic-webfont.woff")
+            format("woff"),
+          /* Modern Browsers */ url("webfonts/leaguegothic-italic-webfont.ttf")
+            format("truetype"),
+          /* Safari, Android, iOS */
+            url("webfonts/leaguegothic-italic-webfont.svg#svgFontName")
+            format("svg"); /* Legacy iOS */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>Michelle Lewis</h1>
+      </div>
+
+      <div>
+        <h1>on-air personality</h1>
+      </div>
+
+      <!-- White Button -->
+      <div>
+        <a href="./home.html">
+          TAKE A LOOK
+        </a>
+      </div>
+
+      <div id="social-container">
+        <div>
+          <a href="http://facebook.com/MichelleRadio" target="_blank">
+            <img src="landing/facebook_landing.png" />
+          </a>
+        </div>
+        <div>
+          <a href="http://twitter.com/Michelle_Radio" target="_blank">
+            <img src="landing/twitter_landing.png" />
+          </a>
+        </div>
+        <div>
+          <a href="http://instagram.com/michelle_radio" target="_blank">
+            <img src="landing/instagram_landing.png" />
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://www.youtube.com/user/mimirb88/videos"
+            target="_blank"
+          >
+            <img src="landing/youtube_landing.png" />
+          </a>
+        </div>
+        <div>
+          <a href="http://linkedin.com/in/michellebuchwalter" target="_blank">
+            <img src="landing/linkedin_landing.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
