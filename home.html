@@ -92,6 +92,10 @@
         margin: 40px auto;
       }
 
+      .box2 {
+        display: none;
+      }
+
       .effect1 {
         -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
           0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -107,17 +111,101 @@
         height: 1000px;
       }
 
-      .facebookrss {
+      .facebookrss-desktop {
         border: none;
         overflow: hidden;
         float: right;
       }
 
-      .snapchat {
+      .snapchat-desktop {
         width: 300px;
       }
 
+      .rss-feed {
+        width: 65%;
+      }
+
       /* MEDIA QUERIES */
+      @media screen and (max-width: 767px) {
+
+        .box {
+        width: 100%;
+        padding: 0px;
+        height: 1750px;
+        background: #fff;
+        margin: 40px auto;
+      }
+
+      .box2 {
+        display: block;
+        width: 100%;
+        padding: 0px;
+        height: 1050px;
+        background: #fff;
+        margin: 40px auto;
+      }
+
+        .rss-feed {
+          width: 100%;
+        }
+
+      }
+
+      @media (min-width: 768px) and (max-width: 1009px) {
+
+        .box {
+        width: 85%;
+        padding: 10px;
+        height: 1750px;
+        background: #fff;
+        margin: 40px auto;
+      }
+
+      .box2 {
+        display: block;
+        width: 85%;
+        padding: 10px;
+        height: 1050px;
+        background: #fff;
+        margin: 40px auto;
+      }
+
+        .rss-feed {
+          width: 100%;
+        }
+
+      }
+
+
+      @media screen and (max-width: 1009px) {
+
+        .facebookrss-mobile {
+          display: block;
+          float: none;
+          margin: 0 auto;
+          padding: auto 10;
+        }
+
+        .twitter-mobile {
+          display: block;
+          width: 300px;
+          margin: 0 auto;
+          padding: auto 10;
+        }
+
+        .facebookrss-desktop {
+          display: none;
+        }
+
+        .twitter-desktop {
+          display: none;
+        }
+
+        .snapchat-desktop {
+          display: none;
+        }
+
+      }
 
       @media screen and (max-width: 700px) {
         .pages a {
@@ -146,14 +234,6 @@
           font-weight: bold;
         }
 
-        .box {
-          width: 70%;
-          padding: 40px;
-          height: 1800px;
-          background: #fff;
-          margin: 40px auto;
-        }
-
         .effect1 {
           -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
             0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -163,28 +243,6 @@
             0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
-        .fw-iframe {
-          width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-          line-height: 0;
-          font-size: 10px;
-        }
-
-        #fw-iframe .fw-feed-items .fw-feed-item-title {
-          font-size: 10px;
-          line-height: 0;
-        }
-
-        .facebookrss {
-          display: none;
-        }
-
-        .twitter {
-          display: none;
-        }
-
-        .snapchat {
-          display: none;
-        }
       }
     </style>
   </head>
@@ -265,18 +323,18 @@
 
     <div class="box effect1">
       <iframe 
-        width="65%" 
         height="1750" 
         src="https://rss.app/embed/v1/list/qNZYozZQX3A3NURr" 
         frameBorder="0"
         style="float:left;"
-      ></iframe>
+        class="rss-feed">
+      </iframe>
      
       <iframe
         src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMichelleRadio&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
         width="300"
         height="500"
-        class="facebookrss"
+        class="facebookrss-desktop"
         scrolling="no"
         frameborder="0"
         allowTransparency="true"
@@ -287,7 +345,7 @@
       <br />
 
       <div style="float:right; padding-top: 50px;">
-        <div class="twitter">
+        <div class="twitter-desktop">
           <a
             class="twitter-timeline"
             data-lang="en"
@@ -303,9 +361,43 @@
           ></script>
         </div>
         <br /><br /><br />
-        <img src="snapchat.jpeg" alt="" class="snapchat" />
+        <img src="snapchat.jpeg" alt="" class="snapchat-desktop" />
       </div>
       <br />
     </div>
+
+    <div class="box2 effect1">
+     
+      <iframe
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMichelleRadio&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+        width="300"
+        height="500"
+        class="facebookrss-mobile"
+        scrolling="no"
+        frameborder="0"
+        allowTransparency="true"
+        style="padding-top: 20px;"
+      ></iframe>
+
+        <div>
+          <div style="width: 300px; margin: 0 auto; padding-top: 20px; padding-bottom: 20px;">
+          <a
+            class="twitter-timeline twitter-mobile"
+            data-lang="en"
+            data-width="300"
+            data-height="500"
+            href="https://twitter.com/Michelle_Radio?ref_src=twsrc%5Etfw"
+            >Tweets by Michelle_Radio</a
+          >
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+          </div>
+        </div>
+
+    </div>
+
   </body>
 </html>
