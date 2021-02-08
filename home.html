@@ -250,7 +250,7 @@
       import requests
 
       # Request to website and download HTML contents
-      url='https://www.radio.com/fm100memphis/authors/michelle-lewis'
+      url='https://www.radio.com/fm100memphis/hosts/michelle-lewis'
       req=requests.get(url)
       content=req.text
 
@@ -267,20 +267,21 @@
           postDict = {
               "headline": "",
               "link": "",
-              "tag": "",
+              # "tag": "",
               "imgUrl": "",
               "date": ""
           }
           headline = elem.find('span', class_="info__headline")
           link = elem.find('a')
-          tag = elem.find('span', class_='thumb__section-front')
+          # tag = elem.find('span', class_='thumb__section-front')
           imgUrl = elem.find('img')
           date = elem.find('div', class_="info__datetime-posted")
-          if None in (headline, link, tag, imgUrl, date):
+          #if None in (headline, link, tag, imgUrl, date):
+          if None in (headline, link, imgUrl, date):
               continue
           postDict["headline"] = headline.text.encode('ascii')
           postDict["link"] = link.get('href')
-          postDict["tag"] = tag.text.encode('ascii')
+          # postDict["tag"] = tag.text.encode('ascii')
           postDict["imgUrl"] = imgUrl['src']
           postDict["date"] = date.text.strip().encode('ascii')
           posts.append(postDict)
@@ -307,6 +308,8 @@
       //    jQuery('iframe').contents().find('#player .controls-wrapper .title h1').css({'font-size':'12px'});
       //});
     </script>
+
+    <button id="echo">click !</button>
 
     <div class="topnav">
       <div class="pages">
@@ -368,7 +371,7 @@
     <div class="box effect1">
       <iframe
         height="1700"
-        src="https://rss.app/embed/v1/list/4YbZ7WRvXbtXnXjA"
+        src="https://rss.app/embed/v1/list/QKEoQiQRilpvOoJm"
         frameborder="0"
         style="float:left;"
         class="rss-feed"
